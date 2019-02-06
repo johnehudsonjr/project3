@@ -30,7 +30,7 @@ class Thrifts extends Component {
         return (
         
             <div>
-                <h1>Enter the name of the items you are looking for!</h1>
+                <h1>Share your favorite Thrift Store!</h1>
                 <AddNewThrift getAllThrifts={this.getAllThrifts}/>
                 {this.state.thrift.map((thrifts, i) =>
                 <div key={i}>
