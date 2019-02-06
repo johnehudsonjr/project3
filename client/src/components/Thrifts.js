@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import AddNewThrift from './AddNewThrift';
+import Navbar from './Navbar';
 
 
 class Thrifts extends Component {
@@ -30,19 +31,32 @@ class Thrifts extends Component {
         return (
         
             <div>
-                <h1>Share your favorite Thrift Store!</h1>
-                <AddNewThrift getAllThrifts={this.getAllThrifts}/>
+              <Navbar />
+
                 {this.state.thrift.map((thrifts, i) =>
-                <div key={i}>
-             
-             <h1>{thrifts.store}</h1>
-             <h1>{thrifts.description}</h1>
-             <h1>{thrifts.location}</h1>
-                    <button onClick={()=> this.delete(thrifts._id)}>Delete</button>
+                <div class="container" key={i}>
+
+
+            <div class="card container" style={{width: "400px", marginBottom: "50px", marginTop: "20px"}}>
+            <div class="card-content">
+                <p class="title">
+                {thrifts.store}
+                </p>
+                <p class="subtitle">
+                {thrifts.description} <br /> {thrifts.location}
+                </p>
+                <button class="button is-warning" onClick={()=> this.delete(thrifts._id)}>Delete</button>
+
+            </div>
+            </div>
 
                     </div>
 
                     )}
+                    <div class="container" style={{width: "400px"}}>
+                      <h1 class="headerFont">Share your fav Thrift Store!</h1>
+                <AddNewThrift getAllThrifts={this.getAllThrifts}/>
+                    </div>
                 
             </div>
 

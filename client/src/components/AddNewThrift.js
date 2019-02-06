@@ -29,15 +29,15 @@ class AddNewThrift extends Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                 <input
-                class="input"
+                class="input inputForm"
                 type="text"
                 placeholder="Store Name"
                 name="store"
                 value={this.state.thrift.store}
                 onChange={this.handleChange}
           />
-                <input
-                class="input"
+                <textarea
+                class="textarea inputForm"
                 type="text"
                 placeholder="Description"
                 name="description"
@@ -45,7 +45,7 @@ class AddNewThrift extends Component {
                 onChange={this.handleChange}
           />
                 <input
-                class="input"
+                class="input inputForm"
                 type="text"
                 placeholder="Location"
                 name="location"
@@ -53,7 +53,7 @@ class AddNewThrift extends Component {
                 onChange={this.handleChange}
           />
                
-          <button>Submit</button>
+          <button class="button is-warning">Submit</button>
           </form>
             </div>
         );

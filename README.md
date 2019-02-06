@@ -11,7 +11,7 @@ I will do a lot better with the styling as well as integrate a way for users to 
 # Live site
 
 # View the app here:
-https://dashboard.heroku.com/apps/immense-basin-84609
+https://immense-basin-84609.herokuapp.com/
 
 # Technologies Used:
 For this project I used the following languages/programs:

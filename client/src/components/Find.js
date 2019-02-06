@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import AddNewFind from './AddNewFind';
 import EditFind from './EditFind'
+import Navbar from './Navbar';
 
 class Find extends Component {
     state ={
@@ -38,6 +39,7 @@ class Find extends Component {
         return (
         
             <div>
+                <Navbar />
                 <h1>Enter the name of the items you are looking for!</h1>
                 <AddNewFind getAllFinds={this.getAllFinds}/>
                 {this.state.find.map((thriftFinds, i) =>

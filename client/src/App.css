@@ -30,3 +30,25 @@
     transform: rotate(360deg);
   }
 }
+
+
+.logoFont {
+  font-family: 'Anton', sans-serif;
+  font-size: 50pt;
+}
+
+.headerFont {
+  font-family: 'Anton', sans-serif;
+  font-size: 20pt;
+  margin-bottom: 20px; 
+}
+
+
+.navbarFont {
+  font-family: 'Anton', sans-serif;
+  font-size: 25pt;
+}
+
+.inputForm {
+  margin-bottom: 20px; 
+}
