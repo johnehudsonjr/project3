@@ -27,10 +27,10 @@ class AddNewFind extends Component {
     
     render() {
         return (
-            <div>
+            <div class="container" style={{width: "400px"}}>
                 <form onSubmit={this.handleSubmit}>
                 <input
-                class="input"
+                class="input inputForm"
                 type="text"
                 placeholder="name"
                 name="username"
@@ -38,7 +38,7 @@ class AddNewFind extends Component {
                 onChange={this.handleChange}
           />
                 <input
-                class="input"
+                class="input inputForm"
                 type="text"
                 placeholder="budget"
                 name="budget"
@@ -46,7 +46,7 @@ class AddNewFind extends Component {
                 onChange={this.handleChange}
           />
                 <input
-                class="input"
+                class="input inputForm"
                 type="text"
                 placeholder="description"
                 name="description"
@@ -54,14 +54,14 @@ class AddNewFind extends Component {
                 onChange={this.handleChange}
           />
                 <input
-                class="input"
+                class="input inputForm"
                 type="text"
                 placeholder="image"
                 name="image"
                 value={this.state.find.image}
                 onChange={this.handleChange}
           />
-          <button>Submit</button>
+          <button class="button is-warning">Submit</button>
           </form>
             </div>
         );

@@ -61,7 +61,7 @@ class EditFind extends Component {
                         />
                     </div>
                    
-                    <button>Edit Find</button>
+                    <button class="button is-warning">Edit Find</button>
                 </form>
             </div>
            
