@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 res.sendFile(__dirname + '/client/build/index.html')
 })
 
-app.use('/api', routes)
+app.use('/', routes)
 
 mongoose.connect(process.env.MONGODB_URI)
 
