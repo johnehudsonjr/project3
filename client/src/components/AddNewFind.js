@@ -7,7 +7,6 @@ class AddNewFind extends Component {
         find:[{}]
     }
 
-    
     handleChange = event => {
         const newState = { ...this.state.find };
         newState[event.target.name] = event.target.value;
