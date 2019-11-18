@@ -18,6 +18,7 @@ class Thrifts extends Component {
         this.setState({thrift:res.data})
     })    
     }
+
     delete = thriftId => {
         axios.delete(`/api/thrift/${thriftId}`).then(() => {
           this.setState({
@@ -36,19 +37,18 @@ class Thrifts extends Component {
                 {this.state.thrift.map((thrifts, i) =>
                 <div class="container" key={i}>
 
-
-            <div class="card container" style={{width: "400px", marginBottom: "50px", marginTop: "20px"}}>
-            <div class="card-content">
-                <p class="title">
-                {thrifts.store}
-                </p>
-                <p class="subtitle">
-                {thrifts.description} <br /> {thrifts.location}
-                </p>
-                <button class="button is-warning" onClick={()=> this.delete(thrifts._id)}>Delete</button>
-
-            </div>
-            </div>
+                      <div class="card container" style={{width: "400px", marginBottom: "50px", marginTop: "20px"}}>
+                            <div class="card-content">
+                                <p class="title">
+                                {thrifts.store}
+                                </p>
+                                <p class="subtitle">
+                                {thrifts.description} <br /> {thrifts.location}
+                                </p>
+                                <button class="button is-warning" onClick={()=> this.delete(thrifts._id)}>Delete</button>
+                                
+                            </div>
+                      </div>
 
                     </div>
 

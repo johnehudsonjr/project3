@@ -18,6 +18,7 @@ class Find extends Component {
             this.setState({ find: res.data })
         })
     }
+    
     delete = findId => {
         axios.delete(`/api/find/${findId}`).then(() => {
             this.setState({

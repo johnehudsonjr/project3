@@ -31,7 +31,7 @@ class AddNewThrift extends Component {
                 <input
                 class="input inputForm"
                 type="text"
-                placeholder="Store Name"
+                placeholder="Store"
                 name="store"
                 value={this.state.thrift.store}
                 onChange={this.handleChange}
