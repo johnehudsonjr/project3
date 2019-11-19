@@ -7,7 +7,6 @@ class AddNewThrift extends Component {
         thrift:[{}]
     }
 
-    
     handleChange = event => {
         const newState = { ...this.state.thrift };
         newState[event.target.name] = event.target.value;
@@ -17,13 +16,13 @@ class AddNewThrift extends Component {
       handleSubmit = event => {
         event.preventDefault();
         const newThrift = this.state.thrift;
-
         axios.post("/api/thrift", newThrift).then(res => {
           this.props.getAllThrifts();
-          
         });
       };
     
+
+      
     render() {
         return (
             <div>

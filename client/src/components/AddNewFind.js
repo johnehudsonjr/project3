@@ -16,12 +16,12 @@ class AddNewFind extends Component {
       handleSubmit = event => {
         event.preventDefault();
         const newFind = this.state.find;
-       
-        
         axios.post("/api/find", newFind).then(res => {
           this.props.getAllFinds();
-          
-        });
+        })
+        .then(res => {
+          window.location.href = '/lookingforlist';
+        })
       };
     
     render() {

@@ -15,13 +15,11 @@ class Navbar extends Component {
     </button>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-    <Link to='/' className= "navbar-item navLinks" >Home</Link>
-    <Link to='/thrift' className= "navbar-item navLinks" >Thrift Stores</Link>
-    <Link to='/finds' className= "navbar-item navLinks" >Thrift Items</Link>
-    
-
+    <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+          <Link to='/' className= "navbar-item navLinks" >Home</Link>
+          <Link to='/lookingfor' className= "navbar-item navLinks" >I'm Looking For</Link>
+          <Link to='/lookingforlist' className= "navbar-item navLinks" >Looking For List</Link>
     </div>
 
   </div>
